@@ -26,7 +26,7 @@ public class CambioController {
 	
 	@GetMapping("/{valor}/{origem}/{destino}")
 	public ResponseEntity<CambioEntity> getCambio (
-			@PathVariable int valor,
+			@PathVariable double valor,
 			@PathVariable String origem,
 			@PathVariable String destino) throws Exception{
 		

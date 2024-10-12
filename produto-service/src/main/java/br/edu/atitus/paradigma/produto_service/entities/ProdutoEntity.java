@@ -19,8 +19,11 @@ public class ProdutoEntity {
 	private String modelo;
 	private double valor;
 	
-	@Transient // indica que este atributo não faz parte da tabela no DB
+	@Transient 
 	private String ambiente;
+	
+	@Transient
+	private double valorConvertido;
 
 	public Integer getId() {
 		return id;
@@ -62,5 +65,14 @@ public class ProdutoEntity {
 		this.ambiente = ambiente;
 	}
 
+	public double getValorConvertido() {
+		return valorConvertido;
+	}
+
+	public void setValorConvertido(double valorConvertido) {
+		this.valorConvertido = valorConvertido;
+	}
+
+	
 	
 }
