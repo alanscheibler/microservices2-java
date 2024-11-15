@@ -8,7 +8,7 @@ import jakarta.persistence.Table;
 import jakarta.persistence.Transient;
 
 @Entity
-@Table(name= "cambio")
+@Table(name = "cambio")
 public class CambioEntity {
 	
 	@Id
@@ -21,7 +21,6 @@ public class CambioEntity {
 	
 	@Transient
 	private String ambiente;
-	
 	@Transient
 	private double valorConvertido;
 
@@ -72,8 +71,6 @@ public class CambioEntity {
 	public void setValorConvertido(double valorConvertido) {
 		this.valorConvertido = valorConvertido;
 	}
-	
-	
-	
 
+	
 }
